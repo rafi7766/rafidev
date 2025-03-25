@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAFI DESIGNER</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="n.js">
+  <link rel="shortcut icon" href="rlogo.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="google-site-verification" content="zPx6o5Ito2eMx5h29-GIuQGtnq_WfZ8MeiRe6LGgOpI" />
+  <meta name="keywords"
+    content="MD Rafi Islam graphic designer, Md Rafi islam, graphic designer, best Portfolio website, Md Rafi islam">
+  <meta name="description"
+    content="Md Rafi islam graphic designer. web designer, Graphic designer, wordpress website creator">
+
+
+</head>
+
+<body>
+  <nav class="nevber">
+    <a href="#" class="logo">RAFI DESIGNER</a>
+
+    <!-- Hamburger icon for mobile view -->
+    <div class="hamburger" id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#footer">footer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-info">
+      <h1>MD RAFI ISLAM</h1>
+      <h2>Hi, I’m Rafijul –</h2>
+      <p>I have 3-4 years of experience in graphics design, web development, and programming.
+        My goal is to provide fast, efficient, and high-quality services to my clients.
+        I am dedicated to creating visually appealing graphics, modern websites, and smart automation solutions.
+      </p>
+      <a href="https://www.upwork.com/freelancers/~011deafee578c8b241" class="btn">HIRE RAFI</a>
+      <div class="btn-sci">
+        <div class="sci">
+          <a href="https://www.messenger.com/e2ee/t/8300745440025539/"><i class='bx bxl-messenger'></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61555688293744" target="_blank"><i
+              class='bx bxl-facebook'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="r.png" alt="MD Rafi Islam">
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <div class="invisible-div"></div>
+  <hr class="home-hr">
+  <section class="About" id="About">
+    <br>
+    <div class="up-text">
+      <h2>I do amazing things for clients</h2>
+
+    </div>
+
+    <div class="container">
+
+      <div class="card">
+        <div class="icon"><img src="pen.png" alt="Photographer Icon"></div>
+        <h3>GRAPHIC DESIGNER</h3>
+        <p>Attractive and professional design guaranteed.
+          Present your brand in a unique and professional look.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="pc.png" alt="Web Designer Icon"></div>
+        <h3>WEB DESIGNER</h3>
+        <p>Create responsive and fast websites.
+          Ensure user-friendly design and SEO-optimized performance.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><img src="coding.png" alt="3D Artist Icon"></div>
+        <h3>Programer</h3>
+        <p>Smart and automated software solutions.
+          Speed ​​up your work with simple and efficient coding.</p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <style>
+    selection {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      font-family: Arial, sans-serif;
+      opacity: 0;
+      /* প্রথমে লুকানো থাকবে */
+      transform: translateY(30px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      margin: 0 auto;
+    }
+
+
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .progress-bar {
+      height: 10px;
+      background: #444;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #4caf50;
+      width: 0;
+      /* শুরুতে 0% থাকবে */
+      transition: width 2s ease-in-out;
+    }
+
+    .progress.graphic {
+      background: #ff9800;
+    }
+
+    .progress.canva {
+      background: #cb1a1a;
+    }
+
+    .progress.photoshop {
+      background: #e3e00a;
+    }
+
+    .progress.js {
+      background: #00fcfc;
+    }
+
+    .progress.illustrator {
+      background: #1702ff;
+    }
+
+    .progress.css {
+      background: #fc00ef;
+    }
+
+    .progress.html5 {
+      background: #0270ff;
+    }
+  </style>
+
+  <!-- Skills Section -->
+  <selection id="skill-se">
+    <div class="skill-box">
+      <div class="skill">
+        <div class="skill-title">Web Designer - 100%</div>
+        <div class="progress-bar">
+          <div class="progress" data-width="100%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">Graphic Designer - 85%</div>
+        <div class="progress-bar">
+          <div class="progress graphic" data-width="85%"></div>
+        </div>
+      </div>
+
+      <hr style="margin: 30px 0 40px;">
+
+      <div class="skill">
+        <div class="skill-title">Html5 - 100%</div>
+        <div class="progress-bar">
+          <div class="progress html5" data-width="100%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-title">css - 90%</div>
+        <div class="progress-bar">
+          <div class="progress css" data-width="90%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">js - 85%</div>
+        <div class="progress-bar">
+          <div class="progress js" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Adobe illustrator - 100%</div>
+        <div class="progress-bar">
+          <div class="progress illustrator" data-width="100%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">Adobe photoshop - 85%</div>
+        <div class="progress-bar">
+          <div class="progress photoshop" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">canva - 70%</div>
+        <div class="progress-bar">
+          <div class="progress canva" data-width="60%"></div>
+        </div>
+      </div>
+    </div>
+  </selection>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let selection = document.querySelector("#skill-se");
+      let progressBars = document.querySelectorAll(".progress");
+
+      let observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show"); // Selection fade-in effect
+            progressBars.forEach(bar => {
+              bar.style.width = bar.getAttribute("data-width"); // Animate progress bars
+            });
+          }
+        });
+      }, { threshold: 0.20 });
+
+      observer.observe(selection);
+    });
+  </script>
+
+  <div class="p-div">
+    <div class="p-box">
+      <h3> My Expertise:</h3>
+      <p>✅ Graphics Design – Logo, Banner, Social Media Posts, Business Cards & more.</p>
+      <p>✅ Website Development – Responsive, SEO-optimized, and fast-loading websites.</p>
+      <p>✅ Programming Solutions – Automation tools, custom scripts, and efficient coding.</p>
+
+      <p style="font-size: large; margin: 30px 0 30px;
+      text-align: center;">🚀 Why Choose Me?</p>
+      <p>✔️ Fast Delivery – I can complete projects quickly and efficiently.</p>
+      <p>✔️ High-Quality Work – I focus on detail and professionalism.</p>
+      <p>✔️ Client Satisfaction – I ensure smooth communication and the best results.</p>
+
+      <p>🛠️ Technologies I Work With:</p>
+      <p>🔹 Graphics: Photoshop, Illustrator, Canva</p>
+      <p>🔹 Web Development: HTML, CSS, JavaScript</p>
+      <p>🔹 Programming: Python, JavaScript, Automation Bots</p>
+      </p>
+    </div>
+  </div>
+
+
+  <br><br><br><br>
+  <hr>
+  <section id="portfolio">
+    <h1 class="con-2-h1">My work's screenshot</h1>
+    <h3 class="tap">tap to view</h3>
+    <div class="container-2">
+
+      <div class="box">
+        <img src="https://inforafi.wordpress.com/wp-content/uploads/2024/09/burger-2artboard-1-100.jpg"
+          alt="Buzzards Bay Coalition">
+
+      </div>
+      <div class="box">
+        <img src="https://inforafi.wordpress.com/wp-content/uploads/2024/09/burger-pngartboard-1-copy-2-8-1.png"
+          alt="MEFA">
+
+      </div>
+      <div class="box">
+        <img src="https://inforafi.wordpress.com/wp-content/uploads/2024/09/headphon-png-2artboard-1.png"
+          alt="Ocean Conservancy">
+
+      </div>
+
+
+
+      <div class="box">
+        <img src="https://inforafi.wordpress.com/wp-content/uploads/2024/09/12333artboard-1.png" alt="Help Whales">
+
+      </div>
+      <div class="box">
+
+        <img src="sofa.jpg" alt="Athlete">
+
+      </div>
+      <div class="box">
+        <img src="https://i.ibb.co.com/1fyRcHW/gbfdfg-Artboard-1-100.jpg" alt="Athlete">
+
+      </div>
+
+
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/xg97jBB/Screenshot-7.png" alt="Make a Night of It">
+      </div>
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/0J5GPpp/Screenshot-10.png">
+      </div>
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/xSW8knv/Screenshot-11.png">
+      </div>
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/183YCRn/Screenshot-16.png">
+      </div>
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/16g0PRp/Screenshot-17.png">
+      </div>
+
+      <div class="box">
+        <img src="https://i.ibb.co.com/J3PzZ1Q/Screenshot-83.png">
+      </div>
+      <div class="box">
+        <img src="https://i.ibb.co.com/hWWQfvF/Screenshot-84.png">
+      </div>
+      <div class="box">
+        <img src="https://i.ibb.co.com/b3Dg0RV/Screenshot-94.png">
+      </div>
+
+
+    </div>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+<section class="custom-contact-section" id="Contact">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mnnppvgq" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="text" name="email or Number" placeholder="enter your Email or Number" required>
+      <textarea name="message" placeholder="Message" rows="4" required></textarea>
+      
+      <div class="service-options">
+          <label>What do you need?</label>
+          <div class="service-buttons">
+              <button type="button" class="service-btn" name="website" data-service="Website">Website</button>
+              <button type="button" class="service-btn" name="graphics" data-service="Graphic-Design">Graphic Design</button>
+          </div>
+          <input type="hidden" name="service" id="selectedService">
+      </div>
+
+      <button type="submit">Send</button>
+  </form>
+</section>
+
+<script>
+  document.querySelectorAll('.service-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        document.querySelectorAll('.service-btn').forEach(btn => btn.classList.remove('selected'));
+        this.classList.add('selected');
+        document.getElementById('selectedService').value = this.getAttribute('data-service');
+    });
+});
+
+</script>
+
+
+</body>
+<br><br><br><br>
+<footer>
+  <div class="div-last">
+    <a class="a-last" href="#">
+      <i class='bx bx-chevrons-up'></i>
+      <h1>UP</h1>
+    </a>
+  </div>
+  <section id="footer">
+    <div class="footer-container">
+      <div class="last-2">
+        <h2>Quick Links</h2>
+        <hr>
+        <a href="#Portfolio">
+          <h3>Portfolio</h3>
+        </a>
+        <a href="#About">
+          <h3>About</h3>
+        </a>
+        <a href="#footer">
+          <h3>footer</h3>
+        </a>
+        <a href="#Contact">
+          <h3>Contact</h3>
+        </a>
+      </div>
+      <div class="div-3">
+        <h2>Websites created by me</h2>
+        <hr>
+        <a href="https://inforafi.wordpress.com/">
+          <h3>Website 1</h3>
+        </a>
+        <a href="https://free-e.netlify.app/">
+          <h3>e-commerce website</h3>
+        </a>
+      </div>
+      <div class="div-4">
+        <h2>More</h2>
+        <hr>
+        <h3>BD Number</h3>
+        <a href="tel:+8801406835319">
+          <p>+8801406835319</p>
+        </a>
+        <br><br>
+        <h3 class="email">Email</h3>
+        <p><a class="mailto" href="mailto:info.rafijul7766@gmail.com">info.rafijul7766@gmail.com</a></p>
+      </div>
+    </div>
+    <p>&copy; RAFI DESIGNER</p>
+  </section>
+</footer>
+
+
+
+</html>
